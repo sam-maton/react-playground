@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import './index.css';
-import App from './App.jsx';
-import UseEffectEvents from './pages/use-effect-events/UseEffectEvents.js';
+import App from './pages/App.jsx';
+import UseEffectEvents from './pages/use-effect-events/UseEffectEvents.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
