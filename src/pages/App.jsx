@@ -1,15 +1,12 @@
 import { Outlet } from 'react-router';
+import Header from '../components/Header';
 
 function App() {
   return (
     <>
-      <header className="bg-blue-500 text-white p-4">
-        <h1 className="text-2xl font-bold">Header</h1>
-      </header>
-      <main className="p-4 flex justify-center">
-        <div className="w-full max-w-4xl">
-          <Outlet />
-        </div>
+      <Header />
+      <main className="p-4 pt-20 flex justify-center h-full">
+        <Outlet />
       </main>
     </>
   );
