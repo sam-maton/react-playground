@@ -5,6 +5,7 @@ import App from './pages/App.jsx';
 import UseEffectEvents from './pages/use-effect-events/UseEffectEvents.jsx';
 import Home from './pages/home/Home.jsx';
 import RefEquality from './pages/ref-equality/RefEquality.jsx';
+import UseLayoutEffect from './pages/use-layout-effect/UseLayoutEffect.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
         <Route index element={<Home />} />
         <Route path="/use-effect-events" element={<UseEffectEvents />} />
         <Route path="/ref-equality" element={<RefEquality />} />
+        <Route path="/use-layout-effect" element={<UseLayoutEffect />} />
       </Route>
     </Routes>
   </BrowserRouter>
