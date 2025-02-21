@@ -3,7 +3,7 @@ import { useState, useLayoutEffect } from 'react';
 export default function UseLayoutEffect() {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 });
 
-  //Using useEffect instead of useLayoutEffect means the effect is fired after the DOM has rendered so there is no flicker when getting the height and width from the window.
+  //Using useLayoutEffect instead of useEffect means the effect is fired before React repaints the screen.
   useLayoutEffect(() => {
     const handleResize = () => {
       setScreenSize({ width: window.innerWidth, height: window.innerHeight });
