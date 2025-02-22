@@ -84,10 +84,9 @@ function Tooltip({ children }) {
   };
 
   useLayoutEffect(() => {
-    const { bottom, top, left, right, y, x, width, height } =
+    console.log('layout Effect');
+    const { bottom, top, x, width } =
       contentRef.current.getBoundingClientRect();
-
-    console.log(window.scrollY);
 
     if (top > window.innerHeight - bottom) {
       setTipLayout({
@@ -100,7 +99,7 @@ function Tooltip({ children }) {
         left: x - width / 2,
       });
     }
-  }, []);
+  }, [contentRef, isHovered]);
 
   return (
     <span
