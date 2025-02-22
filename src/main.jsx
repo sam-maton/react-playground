@@ -7,6 +7,8 @@ import Home from './pages/home/Home.jsx';
 import RefEquality from './pages/ref-equality/RefEquality.jsx';
 import UseLayoutEffect from './pages/use-layout-effect/UseLayoutEffect.jsx';
 import UseSyncExternalStorePage from './pages/use-sync-external-store/UseSyncExternalStore.jsx';
+import RulerResize from './challenges/ruler-resize/RulerResize.jsx';
+import FlexibleTooltip from './challenges/flexible-tooltip/FlexibleTooltip.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -20,6 +22,8 @@ createRoot(document.getElementById('root')).render(
           path="/use-sync-external"
           element={<UseSyncExternalStorePage />}
         />
+        <Route path="/react-ruler" element={<RulerResize />} />
+        <Route path="/flexible-tooltip" element={<FlexibleTooltip />} />
       </Route>
     </Routes>
   </BrowserRouter>
