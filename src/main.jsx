@@ -9,21 +9,25 @@ import UseLayoutEffect from './pages/use-layout-effect/UseLayoutEffect.jsx';
 import UseSyncExternalStorePage from './pages/use-sync-external-store/UseSyncExternalStore.jsx';
 import RulerResize from './challenges/ruler-resize/RulerResize.jsx';
 import FlexibleTooltip from './challenges/flexible-tooltip/FlexibleTooltip.jsx';
+import DocumenTitlePage from './hooks/useDocumentTitle/DocumentTitlePage.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-        <Route path="/use-effect-events" element={<UseEffectEvents />} />
-        <Route path="/ref-equality" element={<RefEquality />} />
-        <Route path="/use-layout-effect" element={<UseLayoutEffect />} />
+        <Route path="use-effect-events" element={<UseEffectEvents />} />
+        <Route path="ref-equality" element={<RefEquality />} />
+        <Route path="use-layout-effect" element={<UseLayoutEffect />} />
         <Route
-          path="/use-sync-external"
+          path="use-sync-external"
           element={<UseSyncExternalStorePage />}
         />
-        <Route path="/react-ruler" element={<RulerResize />} />
-        <Route path="/flexible-tooltip" element={<FlexibleTooltip />} />
+        <Route path="react-ruler" element={<RulerResize />} />
+        <Route path="flexible-tooltip" element={<FlexibleTooltip />} />
+        <Route path="hooks">
+          <Route path="useDocumentTitlePage" element={<DocumenTitlePage />} />
+        </Route>
       </Route>
     </Routes>
   </BrowserRouter>
