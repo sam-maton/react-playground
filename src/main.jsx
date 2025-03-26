@@ -24,9 +24,12 @@ createRoot(document.getElementById('root')).render(
           element={<UseSyncExternalStorePage />}
         />
         <Route path="react-ruler" element={<RulerResize />} />
-        <Route path="flexible-tooltip" element={<FlexibleTooltip />} />
         <Route path="hooks">
           <Route path="useDocumentTitlePage" element={<DocumenTitlePage />} />
+        </Route>
+        <Route path="components">
+          <Route path="useDocumentTitlePage" element={<DocumenTitlePage />} />
+          <Route path="flexible-tooltip" element={<FlexibleTooltip />} />
         </Route>
       </Route>
     </Routes>
